@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Page</title>
+    </head>
+    <body>
+         <button onclick="handleClick1()">Click me</button>
+            <button onclick="handleClick2()">Prompt</button>
+            <button onclick="handleClick2()">confirm</button>  
+
+        <script>
+            function handleClick1(){
+               alert('Button Clicked');
+
+            }
+            function handleClick2(){
+                 let name = prompt('What is your name?');
+                alert('Hello, '+ name + '!');
+                let x = confirm("Are you sure you want to delete this item?");
+                if(x){
+                    alert("Item deleted.");
+                } else {
+                    alert("Item not deleted.");
+                }
+            }
+        </script>
+    </body>
+</html>
